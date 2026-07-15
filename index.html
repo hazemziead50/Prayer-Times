@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مواقيت الصلاة</title>
+    <!-- Font Awesome 6  -->
+    ذ<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕌</text></svg>" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="card" id="app">
+    <h1>
+        <i class="fas fa-mosque"></i>
+    مواقيت الصلاة
+    </h1>
+    <div class="subhead">
+        <i class="fas fa-clock" style="margin-left: 8px;"></i>
+        أوقات الصلوات الخمس الرئيسية    
+    </div>
+
+    <!-- SELECTORS -->
+    <div class="selectors">
+        <div class="select-group">
+            <label><i class="fas fa-globe-asia"></i> القارة </label>
+            <select id="continent"></select>
+        </div>
+        <div class="select-group">
+            <label><i class="fas fa-flag"></i>الدولة </label>
+            <select id="country" disabled></select>
+        </div>
+        <div class="select-group">
+            <label><i class="fas fa-city"></i> المدينة</label>
+            <select id="city" disabled></select>
+        </div>
+        <div class="select-group">
+            <label><i class="fas fa-cog"></i> طريقة الحساب </label>
+            <select id="method"></select>
+        </div>
+    </div>
+
+    <div class="status-row">
+        <div id="infoText"></div>
+        <div id="errorMessage" class="error-message" style="display:none;"></div>
+    </div>
+
+    <table class="prayer-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="prayerBody">
+            <tr><td colspan="2">  </td></tr>
+        </tbody>
+    </table>
+
+    <div id="nextPrayer" class="next-prayer">
+        <p></p>
+    </div>
+
+    <div class="reset-area">
+        <button class="btn-reset" id="resetBtn"><i class="fas fa-undo-alt"></i> أعادة الضبط </button>
+    </div>
+</div>
+    
+        <script src="./js/app.js" type="module"></script>
+</body>
+</html>
+
