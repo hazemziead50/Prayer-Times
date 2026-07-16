@@ -168,7 +168,7 @@ export function resetUI() {
     DOM.nextPrayer.innerHTML = '';//
     hideError();
     setTimeout(()=>{
-       showInfo('اختر قارة، دولة، ثم مدينة'); 
+    showInfo('اختر قارة، دولة، ثم مدينة'); 
     },2000)
     
     
