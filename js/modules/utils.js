@@ -48,7 +48,7 @@ getNextPrayer:(prayers)=>{
    
 
     if(validPrayers.length===0){
-        console.log('لا توجد صلوات')
+        return
     }
    
     const now = new Date()
